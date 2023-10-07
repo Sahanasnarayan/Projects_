@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="with=device-width,initial-scale=1.0">
+  <title>University web design</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+  <!-- header section -->
+  <section class="header">
+    <nav>
+      <!-- below is for logo -->
+      <a href="index.html"><img src="imageschool/logo.png"> </a>
+      <div class="nav-links" id="navLinks">
+        <!-- the id is for js -->
+        <!-- the below one is for X icon for short screen -->
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <!-- this onclick is a javascript -->
+        <!-- if i dont use ul there is somespace from border and it comes with bulletin -->
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">COURSE</a></li>
+          <li><a href="">BLOG</a></li>
+          <li><a href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <!-- for the menu bar for small screen -->
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>World's Biggest University</h1>
+      <p> u can add ur own content here</p>
+      <a href="" class="hero-btn"> Visit us to know more</a>
+    </div>
+    <!-- till her its for the header -->
+  </section>
+  <!-- for javascript toggle menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+
+  </script>
+  <!-- course content -->
+  <section class="course">
+    <h1> Courses we offer</h1>
+    <p> your own content</p>
+    <div class="row">
+
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi velit,
+          aliquet iaculis est. Curabitur porttitor nisi vel lacus euismod egestas. In hac
+          habitasse platea dictumst.</p>
+      </div>
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi velit,
+          aliquet iaculis est. Curabitur porttitor nisi vel lacus euismod egestas. In hac
+          habitasse platea dictumst.</p>
+      </div>
+      <div class="course-col">
+        <h3>Postgraduation</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi velit,
+          aliquet iaculis est. Curabitur porttitor nisi vel lacus euismod egestas. In hac
+          habitasse platea dictumst.</p>
+      </div>
+    </div>
+  </section>
+  <!-- campus-->
+  <section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi velit,
+      aliquet iaculis est. Curabitur porttitor nisi vel lacus euismod egestas. In hac
+      habitasse platea dictumst</p>
+    <div class="row">
+      <!-- for the same row class, we create 3 different campus but the style remains same -->
+      <div class="campus-col">
+        <img src="imageschool/london.png">
+        <div class="layer">
+          <h3>London</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="imageschool/washington.png">
+        <div class="layer">
+          <h3>Washington</h3>
+        </div>
+
+      </div>
+      <div class="campus-col">
+        <img src="imageschool/newyork.png">
+        <div class="layer">
+          <h3>Newyork</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- facilities section-->
+  <section class="facilities">
+    <h1>Our facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="imageschool/library.png">
+        <h3>World class library</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi veli</p>
+      </div>
+      <div class="facilities-col">
+        <img src="imageschool/basketball.png">
+        <h3>World largest basketball</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi veli</p>
+      </div>
+      <div class="facilities-col">
+        <img src="imageschool/cafeteria.png">
+        <h3>healty food at cafeteria</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi veli</p>
+      </div>
+    </div>
+  </section>
+  <!-- testimonials -->
+  <section class="testimonials">
+    <h1> what our student says</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi veli</p>
+    <div class="row">
+      <div class="testimonialcol">
+        <img src="imageschool/user1.jpg">
+        <div>
+          <p>sahana is a good girl, she wants to be an achiever and she is a hardworker and if keeps her mind to some
+            work she will definitely achieve it</p>
+          <h3>christine</h3>
+          <i class="fa-solid fa-star"></i>"
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-o"></i>
+        </div>
+      </div>
+      <div class="testimonialcol">
+        <img src="imageschool/user2.jpg">
+        <div>
+          <p>sahana is a good girl, she wants to be an achiever and she is a hardworker and if keeps her mind to some
+            work she will definitely achieve it</p>
+          <h3>David berkley</h3>
+          <i class="fa-solid fa-star"></i>"
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-o"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- call to action -->
+  <section class="cta">
+    <h1>enroll for our various online courses anywhere from the world</h1>
+    <a href="">CONTACT US</a>
+  </section>
+  <!-- footer -->
+  <section class="footer">
+    <h4> About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at nisi velit,
+      aliquet iaculis est. Curabitur porttitor nisi vel lacus euismod egestas. In hac habitasse platea dictumst. </p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+  </section>
+</body>
+
+</html>
